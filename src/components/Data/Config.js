@@ -1,7 +1,7 @@
 export const Application_Data = [
-    {count : "217 Proposed", percentage : "4/12"},
+    {count : "217 Proposed", percentage : "5/12"},
     {count : "752 Veiwed", percentage : "10/12"},
-    {count : "871 Shortlisted", percentage : "full"},
+    {count : "871 Shortlisted", percentage : "11/12"},
     {count : "63 In-Progress", percentage : "2/12"},
     {count : "6 Offered", percentage : "2/12"},
     {count : "14 Joined", percentage : "2/12"},

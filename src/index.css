@@ -5,3 +5,8 @@
 .black{
     background:black;
 }
+@media (min-width:1280px){
+    .break_flex{
+        align-items: un;
+    }
+}

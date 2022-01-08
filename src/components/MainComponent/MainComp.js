@@ -11,8 +11,8 @@ function Navbar() {
   const [selected, setSelected] = useState(0);
 
   //  we can also make the ui more breakable
-  const check = Nav_Links.filter(({id}) => selected === id)
-  console.log(check)
+  const check = Nav_Links.filter(({ id }) => selected === id);
+  console.log(check);
   return (
     <div className="flex  justify-center w-full">
       <div className="flex items-center justify-center w-11/12 py-4">
@@ -32,7 +32,7 @@ function Navbar() {
           <div className="flex flex-row items-center justify-center absolute w-full top-14">
             <ul className="w-full">
               {/* menu links */}
-              {Nav_Links?.map(({ links, iconClass , id }) => (
+              {Nav_Links?.map(({ links, iconClass, id }) => (
                 <ListItem
                   selected={selected}
                   iconClass={iconClass}
@@ -45,7 +45,7 @@ function Navbar() {
           </div>
         </div>
         <div
-          className={`w-10/12  flex items-center flex-col justify-between md:pl-10`}
+          className={`md:w-10/12  w-full flex items-center flex-col justify-between md:pl-10`}
         >
           <div className="w-full flex items-center justify-between">
             <h1>
@@ -66,15 +66,17 @@ function Navbar() {
               <i className="far fa-bell text-2xl"></i>
             </div>
           </div>
-          <div className="flex w-full mt-16 items-center flex-col justify-center">
+          <div className=" flex w-full mt-16 items-center flex-col justify-center">
             <h1 className="w-full text-3xl font-semibold mb-4">
-              {Nav_Links?.filter(({id}) => selected === id)?.map(({ links}) => (
-                <span>{links}</span>
-              ))}
-              </h1>
-            <div className="w-full justify-center flex">
-              <div className="w-8/12 flex items-center justify-center flex-col">
-                <div className="w-full h-20 rounded-xl border-gray-400 border text-2xl font-normal text-orange-500 flex items-center justify-center">
+              {Nav_Links?.filter(({ id }) => selected === id)?.map(
+                ({ links }) => (
+                  <span>{links}</span>
+                )
+              )}
+            </h1>
+            <div className="break_flex w-full justify-center items-center flex flex-col md:flex-row">
+              <div className="md:w-8/12 w-11/12 flex items-center justify-center flex-col">
+                <div className="w-full md:h-20 h-auto p-4 md:p-0 rounded-xl border-gray-400 border md:text-2xl text-base font-normal text-orange-500 flex items-center justify-center">
                   <h3>
                     Congrats your company has successfully hires 14 candidates{" "}
                   </h3>
@@ -109,9 +111,9 @@ function Navbar() {
                   </div>
                 </div>
               </div>
-              <div className="w-4/12 flex items-center flex-col">
+              <div className="md:w-4/12 flex items-center flex-col w-full">
                 {/* we can use this component multiple time for right side of the dashboard */}
-                <SideCard />
+                <SideCard  />
               </div>
             </div>
           </div>

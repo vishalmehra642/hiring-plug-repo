@@ -1,13 +1,7 @@
-import Navbar from "./components/Navbar/Navbar";
-import Main from './components/Main/Main'
+import Main from "./components/MainComponent/MainComp";
 
 function App() {
-  return (
-    <div>
-    <Navbar/>
-    <Main/>
-    </div>
-  );
+  return <Main />;
 }
 
 export default App;

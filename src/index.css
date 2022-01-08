@@ -5,8 +5,26 @@
 .black{
     background:black;
 }
+.five{
+    width: 50%;
+}
+.nine{
+    width: 90%;
+}
+.ten{
+    width: 95%;
+}
+.three{
+    width: 30%;
+}
+.two{
+    width: 20%;
+}
+.one{
+    width: 10%;
+}
 @media (min-width:1280px){
     .break_flex{
-        align-items: un;
+        align-items: unset;
     }
 }

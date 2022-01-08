@@ -11,8 +11,6 @@ function Navbar() {
   const [selected, setSelected] = useState(0);
 
   //  we can also make the ui more breakable
-  const check = Nav_Links.filter(({ id }) => selected === id);
-  console.log(check);
   return (
     <div className="flex  justify-center w-full">
       <div className="flex items-center justify-center w-11/12 py-4">
@@ -69,8 +67,8 @@ function Navbar() {
           <div className=" flex w-full mt-16 items-center flex-col justify-center">
             <h1 className="w-full text-3xl font-semibold mb-4">
               {Nav_Links?.filter(({ id }) => selected === id)?.map(
-                ({ links }) => (
-                  <span>{links}</span>
+                ({ links , id }) => (
+                  <span key={id}>{links}</span>
                 )
               )}
             </h1>

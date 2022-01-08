@@ -7,7 +7,7 @@ function Application({index ,percentage  , count}) {
       key={index}
     >
       <div
-        className={` w-${percentage} mb-1 rounded-full mr-auto bg-green-600 h-6`}
+        className={`${percentage} mb-1 rounded-full mr-auto bg-green-600 h-6`}
       ></div>
       <h1 className="w-full text-left">{count}</h1>
     </div>

@@ -20,13 +20,14 @@ import PanelUsers from './components/ManageTeams/PanelUsers';
 import EditUserById from './components/ManageTeams/UserRole/userRole_Childs/EditUserById';
 import PanelUserSummary from './components/ManageTeams/PanelUsers/PanelUserSummary/PanelUserSummary';
 import NewUser from './components/ManageTeams/NewUser';
+import Home from './components/Home';
 
 function App() {
   return (
     <div className="bg-[#f4f5f8]">
       <Router>
         <Switch>
-          <Route path="/employer-dashboard" exact children={<Dashboard />} />
+          <Route path="/employer-dashboard" children={<Dashboard />} />
           <Route path="/post-job" children={<PostAJob/>} />
           <Route path="/my-jobs" children={<MyJobs />} />
           <Route path="/agencies" children={<Agencies />} />
@@ -42,8 +43,7 @@ function App() {
           <Route path="/employer-user-role-details/:id" children={<EditUserById/>} /> 
           <Route path="/employer-view-users-summary/:id" children={<PanelUserSummary/>} /> 
           <Route path="/employer-user-role-details" children={<NewUser/>} /> 
-
-          {/* /employer-user-role-details */}
+          <Route exact path="/"  children={<Home/>} />
         </Switch>
         </Router>
     </div>

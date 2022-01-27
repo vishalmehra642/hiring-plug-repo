@@ -1,9 +1,44 @@
 module.exports = {
+  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   mode: 'jit',
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
   theme: {
+    fontFamily: {
+      'primary': [ 'Roboto', 'sans-serif']
+    },
+    colors: {
+      black : "#000",
+      green : "#00a63f",
+      "hover-blue" : "#F0FCF5",
+      gray : "#6e6e6e",
+      orange : "#ff9c00",
+      white : "#fff",
+      blue: "#3366ff",
+      indigo: "#5b47fb",
+      purple: "#6f42c1",
+      pink: "#f10075",
+      red: "#dc3545",
+      orange: "#fd7e14",
+      yellow: "#ffc107",
+      "green-second": "#3bb001",
+      teal: "#00cccc",
+      cyan: "#17a2b8",
+      "gray-light": "#7987a1",
+      "gray-dark": "#3b4863",
+      primary: "#3366ff",
+      secondary: "#7987a1",
+      success: "#3bb001",
+      info: "#17a2b8",
+      arning: "#ffc107",
+      danger: "#dc3545",
+      light: "#f4f5f8",
+      dark: "#3b4863",
+      "border-col" : "#cdd4e0",
+      base: "#f4f5f8",
+      "btn-gray" : "#ccc",
+      "gray-extra-light" : "#8d8d8d",
+      "light-gray-table" : "#edf0f5"
+
+    },
     extend: {},
   },
   plugins: [],
